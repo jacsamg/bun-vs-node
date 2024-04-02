@@ -1,0 +1,25 @@
+{
+  "extends": "./node_modules/@tsconfig/node-lts/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./build",
+    "sourceMap": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./cache/tsconfig.tsbuildinfo",
+    "preserveSymlinks": true,
+    "preserveWatchOutput": true
+  },
+  "watchOptions": {
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority",
+    "synchronousWatchDirectory": true,
+    "excludeDirectories": [
+      "**/node_modules"
+    ],
+    "excludeFiles": []
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
