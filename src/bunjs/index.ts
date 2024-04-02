@@ -1,16 +1,14 @@
 import { Elysia } from 'elysia';
 
-const app = new Elysia();
 const port = 80;
 
-app.get('/test/json', (ctx) => {
-  ctx.set.status = 200;
-  ctx.set.headers['x-powered-by'] = 'Elysia';
+new Elysia()
+  .get('/test/json', (ctx) => {
+    ctx.set.status = 200;
+    ctx.set.headers['x-powered-by'] = 'Elysia';
 
-  return { success: true };
-});
-
-app.listen(port, () => {
-
-  console.log(`Elysia: server listening in port '${port}'`);
-});
+    return { success: true };
+  }).listen(port, () => {
+    console.log(process.env.NODE_ENV);
+    console.log(`Elysia: server listening in port '${port}'`);
+  });
