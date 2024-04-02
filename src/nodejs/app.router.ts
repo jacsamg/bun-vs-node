@@ -12,7 +12,7 @@ export function appRouter(): UwsServerRouter {
   router.addRouterPath("/test");
   router.makeRoutes(
     {
-      path: { method: PathMethod.post, url: "/json" },
+      path: { method: PathMethod.get, url: "/json" },
       handler: appPingHandler
     }
   );
