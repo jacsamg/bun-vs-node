@@ -2,8 +2,9 @@
   "name": "bun-vs-node",
   "scripts": {
     "compile": "bunx tsc --project ./tsconfig.json",
-    "bun:server": "NODE_ENV=production bun ./build/bunjs",
-    "node:server": "NODE_ENV=production node ./build/nodejs"
+    "bun:elysia": "NODE_ENV=production bun ./build/bun/elysia.js",
+    "bun:hono": "NODE_ENV=production bun ./build/bun/hono.js",
+    "node:uws": "NODE_ENV=production node ./build/node/uws.js"
   },
   "devDependencies": {
     "@tsconfig/node-lts": "^20.1.3",
@@ -15,6 +16,7 @@
   },
   "dependencies": {
     "elysia": "^1.0.10",
+    "hono": "^4.1.7",
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
   }
 }
