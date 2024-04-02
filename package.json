@@ -1,7 +1,7 @@
 {
   "name": "bun-vs-node",
   "scripts": {
-    "compile": "tsc --project ./tsconfig.json",
+    "compile": "bunx tsc --project ./tsconfig.json",
     "bun:server": "bun ./build/bunjs",
     "node:server": "node ./build/nodejs"
   },
