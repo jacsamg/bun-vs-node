@@ -4,7 +4,7 @@
     "compile": "bunx tsc --project ./tsconfig.json",
     "bun:elysia": "NODE_ENV=production bun ./build/bun/elysia.js",
     "bun:hono": "NODE_ENV=production bun ./build/bun/hono.js",
-    "node:uws": "NODE_ENV=production node ./build/node/uws.js"
+    "node:uws": "NODE_ENV=production node ./build/node/uws/uws.js"
   },
   "devDependencies": {
     "@tsconfig/node-lts": "^20.1.3",
