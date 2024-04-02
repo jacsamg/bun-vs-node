@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "elysia": "^1.0.10",
-    "uWebSockets.js": "uNetworking/uWebSockets.js#v20.43.0"
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
   }
 }
