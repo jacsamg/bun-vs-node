@@ -1,13 +1,14 @@
 {
   "name": "bun-vs-node",
   "scripts": {
-    "compile": "bunx tsc --project ./tsconfig.json",
+    "compile": "tsc --project ./tsconfig.json",
     "bun:server": "bun ./build/bunjs",
     "node:server": "node ./build/nodejs"
   },
   "devDependencies": {
     "@tsconfig/node-lts": "^20.1.3",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/node": "^20.12.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
