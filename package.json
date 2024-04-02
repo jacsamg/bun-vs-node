@@ -2,8 +2,8 @@
   "name": "bun-vs-node",
   "scripts": {
     "compile": "bunx tsc --project ./tsconfig.json",
-    "bun:server": "bun ./build/bunjs",
-    "node:server": "node ./build/nodejs"
+    "bun:server": "NODE_ENV=production bun ./build/bunjs",
+    "node:server": "NODE_ENV=production node ./build/nodejs"
   },
   "devDependencies": {
     "@tsconfig/node-lts": "^20.1.3",
