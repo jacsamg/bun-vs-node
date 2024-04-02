@@ -2,7 +2,7 @@ import { Hono } from 'hono';
 
 const app = new Hono();
 
-app.get('/test/json', (c) => {
+app.get('/test/json', (c: any) => {
   c.status(200);
   c.header("x-powered-by", "Hono");
 
