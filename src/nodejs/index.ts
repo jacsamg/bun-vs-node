@@ -7,7 +7,7 @@ import { UwsServerService } from "./uwebsockets/index.js";
     // Definitions
     // ================================================================================
     const uwsServerService = new UwsServerService();
-    const serverPort = parseInt("3000");
+    const serverPort = parseInt("80");
 
     uwsServerService.__init();
     await uwsServerService.addRouter(appRouter);
